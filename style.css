@@ -1,0 +1,29 @@
+.headding {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.note {
+    font-size: 17px;
+    color:rgb(99, 18, 248);
+}
+
+.footer{
+    position: fixed;
+    color: cornsilk;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+   line-height:3;
+   text-align: center;
+}
+
+canvas{
+    border: 5px double dodgerblue;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px darkblue;
+}
