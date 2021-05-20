@@ -13,7 +13,7 @@ function setup() {
   poseNet.on('pose' , gotPoses);
 }
 function draw() {
-  document.getElementById("font_size").innerHTML = "Side of the square will be =" + difference;
+  document.getElementById("font_size").innerHTML = "The Font's Side Is: " + difference + " px";
   background('#FF0000');
   fill('#FFC0CB');
   stroke('#FFC0CB');
@@ -25,10 +25,9 @@ function modelLoaded() {
 function gotPoses(results) {
     if(results.length > 0) {
         console.log(results);
-        leftWristX = results[0].pose.rightWristX.x;
-        rightWristX = results[0].pose.leftWristX.x;
+        leftWristX = results[0].pose.leftWristX.x;
+        rightWristX = results[0].pose.rightWristX.x;
         difference = floor(leftWristX - rightWristX);
         console.log("leftWristX " + leftWristX +"rightWristX " + rightWristX + "difference" + difference );
     }
 }
-
